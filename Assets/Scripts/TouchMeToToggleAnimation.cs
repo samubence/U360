@@ -9,8 +9,8 @@ public class TouchMeToToggleAnimation : MonoBehaviour
     [Header("Drag animator object here")]
     public Animator animator;
     [Header("Drag waiting and action animation clip here")]
-    public AnimationClip animClipWaiting;
-    public AnimationClip animClipAction;
+    public AnimationClip animClipFirst;
+    public AnimationClip animClipSecond;
     [Header("Sets transition speed")]
     public float fadeDuration = 0.2f;
 
@@ -43,7 +43,7 @@ public class TouchMeToToggleAnimation : MonoBehaviour
                     if (animator != null)
                     {
                         state = !state;
-                        animator.CrossFade( state ? animClipAction.name : animClipWaiting.name, fadeDuration);
+                        animator.CrossFade( state ? animClipSecond.name : animClipFirst.name, fadeDuration);
                     }
                 }
             }

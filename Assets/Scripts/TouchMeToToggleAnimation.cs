@@ -22,7 +22,8 @@ public class TouchMeToToggleAnimation : MonoBehaviour
         {
             animator = GetComponent<Animator>();
         }
-        else
+
+        if ( animator == null )
         {
             Debug.Log("Error, no animation controller found");
         }

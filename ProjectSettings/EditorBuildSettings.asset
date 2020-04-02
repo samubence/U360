@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Lesson_Interactivity_2.unity
+    guid: 5c38e2c8c35ae402b8d15b1bb2dc6adb
   m_configObjects: {}
